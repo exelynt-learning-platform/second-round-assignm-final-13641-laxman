@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { environment } from '../environment/environment';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -11,12 +11,11 @@ import { environment } from '../environment/environment';
 export class AppComponent {
   title = 'chat-bot';
   a:string="";
-  b=environment.apiUrl;
   
 
 
   ngOnInit() {
-    console.log('API URL:', this.b); // ✅ prints apiUrl
+    
   }
   
 }

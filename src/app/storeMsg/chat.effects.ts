@@ -3,7 +3,7 @@ import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { ChatActions } from './chat.actions';
 import { catchError, map, switchMap, of, from } from 'rxjs'; // Added 'from'
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import { environment } from '../../environment/environment';
+import { environment } from '../../environments/environment';
 
 @Injectable()
 export class ChatEffects {
